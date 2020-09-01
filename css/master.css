@@ -1,0 +1,70 @@
+body {
+	color: #878787;
+	margin: 0;
+	font-size:150%;
+}
+
+h1 {
+	font-size: 90px;
+	color: white;
+}
+
+h2 {
+	font-size: 53px;
+}
+
+h3 {
+	font-size: 20px;
+	color: #48525c;
+}
+
+/* ID Selectors */
+#main_footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px orange;
+}
+
+/* Class Selectors */
+.main_content,
+.secondary_content{
+	width:60%;
+}
+
+.main_content {
+	text-align: center;
+}
+
+.main_header {
+	background-color: orange;
+}
+
+.title{
+	color:#ffffff;
+	font-size: 26px;
+}
+
+.t_border {
+	border-top: 2px solid lightgrey;
+}
+
+/* Pseudo-Class Selectors */
+a:link {
+	color:orange;
+}
+
+a:visited {
+	color:lightblue;
+}
+
+a:hover{
+	color:forestgreen;
+}
+
+a:active{
+	color:lightcoral;
+}
+
+a:focus{
+	color:white;
+}
