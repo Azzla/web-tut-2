@@ -85,8 +85,7 @@ li{
 }
 
 .main_content,
-.main_header,
-.main_footer
+.main_header
 {
 	text-align: center;
 }
@@ -177,4 +176,54 @@ a:active{
 	content:"";
 	display:table;
 	clear:both;
+}
+
+/* Media Queries */
+@media (max-width:1024px) {
+	.main_content,
+	.secondary_content
+	{
+		width:90%;
+	}
+	.wildlife{
+		padding:10% 12%;
+		margin: 50px 0 20px;
+	}
+}
+
+@media (max-width:768px) {
+	.main_content,
+	.secondary_content
+	{
+		width:100%;
+		padding:20px;
+		border:none;
+	}
+	.main_header{
+		max-height:380px;
+		padding:50px 25px 0;
+	}
+	.title{
+		font-size:1.3rem;
+		border:none;
+	}
+	h1{
+		font-size:5rem;
+		line-height:1.1;
+	}
+	#arrow{
+		display:none;
+	}
+	.intro{
+		font-size:1rem;
+	}
+	.resorts,
+	.tips
+	{
+		float:none;
+		width:100%;
+	}
+	#main_footer{
+		padding:20px 0;
+	}
 }
