@@ -1,3 +1,13 @@
+/* Web Fonts */
+@font-face{
+	font-family: 'Abolition Regular';
+	src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+
 *{ box-sizing:border-box; }
 
 body {
@@ -6,12 +16,19 @@ body {
 	font:1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1,h2 {
+	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+	letter-spacing: .07em;
+}
+
 h1 {
 	font-size: 5.625em; /* 90/16px */
 	color:#fff;
 	text-transform: uppercase;
 	font-weight: normal;
 	line-height:1.3;
+	text-shadow: 0 5px 10px rgba(0,0,0,.5);
+	margin-top: 48px;
 }
 
 h2 {
@@ -31,6 +48,8 @@ h3 {
 img{
 	max-width: 100%;
 	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -8px #222;
 }
 
 ul, ol{
@@ -46,6 +65,7 @@ li{
 /* ID Selectors */
 #arrow{
 	width:50px;
+	margin-top: 150px;
 }
 
 #main_footer {
@@ -92,14 +112,17 @@ li{
 .wildlife{
 	color:#fff;
 	background:#434a52 url('../img/bear.jpg') no-repeat center/cover;
-	padding: 18% 24%;
+	padding: 18% 20%;
 	border-top: solid 10px #ffa949;
 	margin: 105px 0 60px 0;
 	text-align:left;
+	box-shadow: 0 10px 20px -8px #222;
 }
 
 .main_header {
-	background:#ffa949 url('../img/mountains.jpg') no-repeat center/cover;
+	background: linear-gradient(#ffa949, transparent 70%),
+							linear-gradient(0deg, #fff, transparent 70%),
+							#ffa949 url('../img/mountains.jpg') no-repeat center/cover;
 	height:850px;
 	padding-top:170px;
 }
@@ -107,6 +130,10 @@ li{
 .title{
 	color:#fff;
 	font-size: 1.625em; /* 26/16px */
+	letter-spacing: .065em;
+	font-weight: 200;
+	border-bottom:2px solid ;
+	padding-bottom: 10px;
 }
 
 .intro{
